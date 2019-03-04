@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Liste des gardiens</title>
+</head>
+<body>
+	<h1>Liste de gardiens</h1>
+	
+	<div th:each="gar : ${listGardiens}">
+		<p th:text="gar.nom"></p>
+	</div>
+</body>
+</html>

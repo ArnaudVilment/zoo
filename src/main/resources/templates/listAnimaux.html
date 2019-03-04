@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Liste des animaux</title>
+</head>
+<body>
+
+	<div th:include="@{/inc/header.html"></div>
+
+	<h1>Liste de animaux</h1>
+	
+	<div th:each="ani : ${listAnimaux}">
+		<p th:text="${ ani.nom}"></p>
+		<p th:text="${ ani.race}"></p>
+		<p th:text="${ ani.age}"></p>
+		<p th:text="${ ani.esperence}"></p>
+	</div>
+</body>
+</html>
